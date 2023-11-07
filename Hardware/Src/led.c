@@ -6,7 +6,7 @@
 #include "stm32f1xx_hal.h"
 
 
-void Led_init(){
+void Led_init() {
     GPIO_InitTypeDef GPIO_InitStruct = {0};
 
     __HAL_RCC_GPIOC_CLK_ENABLE();
@@ -20,4 +20,8 @@ void Led_init(){
     GPIO_InitStruct.Pull = GPIO_NOPULL;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
     HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+}
+
+void led_turn() {
+    HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
 }

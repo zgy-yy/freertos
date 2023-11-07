@@ -7,4 +7,6 @@
 
 void Led_init();
 
+void led_turn();
+
 #endif //FREERTOS_LED_H

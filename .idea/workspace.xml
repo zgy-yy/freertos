@@ -16,18 +16,71 @@
   </component>
   <component name="CMakeSettings">
     <configurations>
-      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" GENERATION_OPTIONS="-DCMAKE_COLOR_DIAGNOSTICS:BOOL=ON" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5fd7447f-ef34-4d07-951b-e9efab52b604" name="更改" comment="led hardware">
-      <change afterPath="$PROJECT_DIR$/Core/Tasks/Inc/firstTask.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Tasks/Src/firstTask.c" afterDir="false" />
+    <list default="true" id="5fd7447f-ef34-4d07-951b-e9efab52b604" name="更改" comment="任务创建与删除">
+      <change afterPath="$PROJECT_DIR$/Hardware/Inc/Gui.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hardware/Inc/font.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hardware/Inc/lcd.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hardware/Src/Gui.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hardware/Src/lcd.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mxproject" beforeDir="false" afterPath="$PROJECT_DIR$/.mxproject" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/FreeRTOSConfig.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/FreeRTOSConfig.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/stm32f1xx_hal_conf.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/stm32f1xx_hal_conf.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/freertos.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/freertos.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/Inc/led.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/Inc/led.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/Src/led.c" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/Src/led.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Tasks/Inc/firstTask.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Tasks/Src/firstTask.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Device/ST/STM32F1xx/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/CMSIS/Device/ST/STM32F1xx/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_bus.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_bus.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_cortex.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_cortex.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_dma.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_dma.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_exti.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_exti.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_gpio.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_gpio.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_pwr.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_pwr.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_rcc.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_rcc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_system.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_system.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_utils.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_utils.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hardware/Inc/led.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hardware/Src/led.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/freertos.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/freertos.ioc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,12 +94,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "zgy-yy"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;zgy-yy&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -54,6 +107,19 @@
         <option name="url" value="https://github.com/zgy-yy/freertos.git" />
       </UrlAndAccount>
     </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Core/Src/freertos.c" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Src/main.c" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hardware/Inc/spi.h" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hardware/Src/spi.c" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hardware/Src/usart.c" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/include/task.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/tasks.c" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectApplicationVersion">
     <option name="ide" value="CLion" />
@@ -71,30 +137,39 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "OpenOCD 下载并运行.OCD freertos.executor": "Run",
+    "OpenOCD 下载并运行.freeRots.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.RadMigrateCodeStyle": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "WebServerToolWindowFactoryState": "false",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/AA_stm32/freertos/CMakeLists.txt",
+    "last_opened_file_path": "D:/AA_stm32/freertos/Hardware/Src",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
+    "settings.editor.selected.configurable": "CMakeSettings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\AA_stm32\freertos\Core\Tasks\Inc" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\AA_stm32\freertos\Hardware\Src" />
       <recent name="D:\AA_stm32\freertos\Hardware\Inc" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\AA_stm32\freertos\Hardware\Inc" />
+      <recent name="D:\AA_stm32\freertos\Hardware\Src" />
+      <recent name="D:\AA_stm32\freertos\Core\Tasks\Inc" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="OpenOCD 下载并运行.OCD freertos">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="CLION.EXTERNAL.BUILD" enabled="true" />
@@ -108,6 +183,10 @@
         <option name="CLION.COMPOUND.BUILD" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="OpenOCD 下载并运行.OCD freertos" />
+      <item itemvalue="OpenOCD 下载并运行.freeRots" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -125,7 +204,11 @@
       <workItem from="1699335317058" duration="23000" />
       <workItem from="1699335351685" duration="39000" />
       <workItem from="1699335401933" duration="28000" />
-      <workItem from="1699335442532" duration="7811000" />
+      <workItem from="1699335442532" duration="8704000" />
+      <workItem from="1699431520120" duration="1342000" />
+      <workItem from="1699860274704" duration="1690000" />
+      <workItem from="1699861991087" duration="3187000" />
+      <workItem from="1699865370358" duration="5469000" />
     </task>
     <task id="LOCAL-00001" summary="led hardware">
       <option name="closed" value="true" />
@@ -135,17 +218,24 @@
       <option name="project" value="LOCAL" />
       <updated>1699335924934</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="任务创建与删除">
+      <option name="closed" value="true" />
+      <created>1699345658370</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1699345658370</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VCPKGProject">
-    <isAutomaticEditVcpkgJson value="false" />
     <isAutomaticCheckingOnLaunch value="false" />
     <isAutomaticFoundErrors value="true" />
-    <isAutomaticFoundErrors value="true" />
+    <isAutomaticReloadCMake value="true" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -160,6 +250,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="led hardware" />
-    <option name="LAST_COMMIT_MESSAGE" value="led hardware" />
+    <MESSAGE value="任务创建与删除" />
+    <option name="LAST_COMMIT_MESSAGE" value="任务创建与删除" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h</url>
+          <line>664</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -19,78 +19,57 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "cmsis_os.h"
-#include "led.h"
-#include "task.h"
-#include "firstTask.h"
+#include "spi.h"
+#include "usart.h"
 
-/* Private includes ----------------------------------------------------------*/
-/* USER CODE BEGIN Includes */
+#include "stdio.h"
+#include "lcd.h"
+#include "Gui.h"
 
-/* USER CODE END Includes */
-
-/* Private typedef -----------------------------------------------------------*/
-/* USER CODE BEGIN PTD */
-
-/* USER CODE END PTD */
-
-/* Private define ------------------------------------------------------------*/
-/* USER CODE BEGIN PD */
-
-/* USER CODE END PD */
-
-/* Private macro -------------------------------------------------------------*/
-/* USER CODE BEGIN PM */
-
-/* USER CODE END PM */
-
-
-
-/* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 
-/* USER CODE BEGIN PFP */
+void MX_FREERTOS_Init(void);
 
-/* USER CODE END PFP */
-
-/* Private user code ---------------------------------------------------------*/
-/* USER CODE BEGIN 0 */
-
-/* USER CODE END 0 */
-
-
-void startTask() {
-    TaskHandle_t led_handle;
-
-    xTaskCreate(Led_task, "firstTask", 128, NULL, osPriorityAboveNormal, &led_handle);
-
-
-    while (1) {
-        vTaskDelay(2000);
-
-        vTaskDelete(led_handle);
-    }
-}
 
 /**
   * @brief  The application entry point.
   * @retval int
   */
 int main(void) {
+    /* USER CODE BEGIN 1 */
+
+    /* USER CODE END 1 */
 
     /* MCU Configuration--------------------------------------------------------*/
 
     /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
     HAL_Init();
 
+    /* USER CODE BEGIN Init */
+
+    /* USER CODE END Init */
+
     /* Configure the system clock */
     SystemClock_Config();
 
+    /* USER CODE BEGIN SysInit */
+
+    /* USER CODE END SysInit */
+
+    /* Initialize all configured peripherals */
+
+    MX_USART1_UART_Init();
+    /* USER CODE BEGIN 2 */
+    Lcd_init();
+    Lcd_Clear(RED);
+    lcd_printf(0, 0, "hello%d", 8);
+    /* USER CODE END 2 */
 
     /* Init scheduler */
-    osKernelInitialize();
+    osKernelInitialize(); /* Call init function for freertos objects (in freertos.c) */
+    MX_FREERTOS_Init();
 
-
-    xTaskCreate(startTask, "start", 128, NULL, osPriorityAboveNormal, NULL);
+    printf("hello\n");
 
 
     /* Start scheduler */
@@ -101,7 +80,6 @@ int main(void) {
     /* USER CODE BEGIN WHILE */
     while (1) {
         /* USER CODE END WHILE */
-
 
         /* USER CODE BEGIN 3 */
     }
@@ -144,6 +122,9 @@ void SystemClock_Config(void) {
     }
 }
 
+/* USER CODE BEGIN 4 */
+
+/* USER CODE END 4 */
 
 /**
   * @brief  Period elapsed callback in non blocking mode
@@ -153,7 +134,7 @@ void SystemClock_Config(void) {
   * @param  htim : TIM handle
   * @retval None
   */
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim) {
     /* USER CODE BEGIN Callback 0 */
 
     /* USER CODE END Callback 0 */

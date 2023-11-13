@@ -1,7 +1,7 @@
 #此文件从模板自动生成! 请勿更改!
 set(CMAKE_SYSTEM_NAME Generic)
 set(CMAKE_SYSTEM_VERSION 1)
-cmake_minimum_required(VERSION 3.26)
+cmake_minimum_required(VERSION 3.27)
 
 # specify cross-compilers and tools
 set(CMAKE_C_COMPILER arm-none-eabi-gcc)
@@ -51,10 +51,12 @@ endif ()
 
 include_directories(Core/Inc Drivers/STM32F1xx_HAL_Driver/Inc/Legacy
         Drivers/STM32F1xx_HAL_Driver/Inc Middlewares/Third_Party/FreeRTOS/Source/include
-        Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3
+        Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2
+        Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3
         Drivers/CMSIS/Device/ST/STM32F1xx/Include Drivers/CMSIS/Include
         Hardware/Inc
-        Core/Tasks/Inc)
+        Core/Task/Inc
+)
 
 add_definitions(-DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB)
 
